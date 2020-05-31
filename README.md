@@ -8,3 +8,5 @@ Concepts related to Unix
 * VEth is a Virtual Ethernet device type
 * Interruption Vector
 Determines which routines provide service to certain interruptions/exceptions/system calls.
+
+* In UNIX, it is possible to use the `NULL` virtual device to dump anything that we don't want to output anywhere else.
