@@ -16,3 +16,18 @@ Determines which routines provide service to certain interruptions/exceptions/sy
 ```bash
 grep "model name" /proc/cpuinfo
 ```
+
+* Get the 11 processes taking more system resources
+```bash
+ps h -eo pcpu,comm | sort -nr | head -11
+```
+
+* Get the total number of processes registered in the system
+```bash
+ps h -u root | wc -l
+```
+
+* List the users with registeres processes
+```bash
+ps h -ef | cut -f1 -d " " | sort | uniq
+```
