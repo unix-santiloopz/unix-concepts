@@ -31,3 +31,6 @@ ps h -u root | wc -l
 ```bash
 ps h -ef | cut -f1 -d " " | sort | uniq
 ```
+
+### D-Bus
+In computing, D-Bus (short for "Desktop Bus") is a software bus, inter-process communication (IPC), and remote procedure call (RPC) mechanism that allows communication between multiple processes running concurrently on the same machine. D-Bus was developed as part of the freedesktop.org project, initiated by Havoc Pennington from Red Hat to standardize services provided by Linux desktop environments such as GNOME and KDE.
