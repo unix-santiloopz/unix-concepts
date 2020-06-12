@@ -53,3 +53,11 @@ Run systemd as a user level process
 
 * unit
 A unit is a service in systemd
+
+* job
+Job is a synonim of child prcess of the current terminal session.
+Get jobs: `jobs -l`.  
+Send interrupt signal to interrupted job `kill -INT %3` # background process id  
+Send interrupted job to foreground: `fg %2`  
+Get pid if processes with a certain name: `pidof <name>`  
+Send signal to processes that match a name:  `kill -INT \`pidof <name>\``
