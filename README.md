@@ -42,11 +42,14 @@ In Unix-based computer operating systems, init (short for initialization) is the
 A runlevel is a mode of operation in the computer operating systems that implement Unix System V-style initialization. Conventionally, seven runlevels exist, numbered from zero to six. S is sometimes used as a synonym for one of the levels. Only one runlevel is executed on startup; run levels are not executed one after another (i.e. only runlevel 2, 3, or 4 is executed, not more of them sequentially or in any other order).  
 A runlevel defines the state of the machine after boot. Different runlevels are typically assigned (not necessarily in any particular order) to the single-user mode, multi-user mode without network services started, multi-user mode with network services started, system shutdown, and system reboot system states. The exact setup of these configurations varies between operating systems and Linux distributions. For example, runlevel 4 might be a multi-user GUI no-server configuration on one distribution, and nothing on another. Runlevels commonly follow the general patterns described in this article; however, some distributions employ certain specific configurations. 
 
-* systemd
+* [systemd](https://systemd.io/)
 is an implementation of the init process in Unix, also a software suite that provides an array of system components for Linux operating systems.  
 Its main aim is to unify service configuration and behavior across Linux distributions; systemd's primary component is a "system and service manager"—an init system used to bootstrap user space and manage user processes. It also provides replacements for various daemons and utilities, including device management, login management, network connection management, and event logging.  
 The name systemd adheres to the Unix convention of naming daemons by appending the letter d. It also plays on the term "System D", which refers to a person's ability to adapt quickly and improvise to solve problems. 
 systemctl is a program to control systemd.
+
+* [systemd-homed](https://www.freedesktop.org/software/systemd/man/systemd-homed.service.html)
+Run systemd as a user level process
 
 * unit
 A unit is a service in systemd
